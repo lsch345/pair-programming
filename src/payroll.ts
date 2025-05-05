@@ -31,7 +31,7 @@ export function calculatePayslip(salary: Salary): Payslip {
   };
 
   const age = new Date().getFullYear() - salary.born.getFullYear();
-  if (age < 18) {
+  if (age >= 18) {
     result.deductions.set("AHV", salary.gross * 0.087);
     result.deductions.set("IV", salary.gross * 0.014);
     result.deductions.set("EO", salary.gross * 0.005);

@@ -25,6 +25,6 @@ describe("calculatePayslip", () => {
         expect(result.deductions.has("AHV")).toBe(true);
         expect(result.deductions.has("IV")).toBe(true);
         expect(result.deductions.has("EO")).toBe(true);
-        expect(result.net).toBe(1200);
+        expect(result.net).toBe(1072.8);
     })
 });
